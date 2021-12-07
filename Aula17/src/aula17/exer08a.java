@@ -1,4 +1,3 @@
-
 package aula17;
 
 import java.util.Random;
@@ -31,38 +30,33 @@ public class exer08a {
         
         //buscar o maior valor
         int maior = 0;
-        
         for (int i=0; i<matrizM.length; i++){
             for (int j=0; j<matrizM[i].length;j++){
                 if(matrizM[i][j]> maior){
                     maior = matrizM[i][j];
-                };
+                }
             }
         }
         
         //buscar o menor valor
-        int menor = 0;
-        
+        int menor = 50;
         for (int i=0; i<matrizM.length; i++){
             for (int j=0; j<matrizM[i].length;j++){
                 if(matrizM[i][j]< menor){
                     menor = matrizM[i][j];
-                };
+                }
             }
         }
         
         //buscar o maior valor da linha 5
         int maiorL5 = 0;
-        
-        for (int i=4; i<matrizM.length; ){
-            for (int j=0; j<matrizM[i].length;j++){
-                if(matrizM[i][j]> maior){
+        for (int i=0; i<matrizM.length; ){
+            for (int j=0; j<matrizM[4].length;j++){
+                if(matrizM[4][j]> maior){
                     maiorL5 = matrizM[i][j];
-                };
+                }
             }
         }
-        
-        
         
         
         System.out.println("Maior valor é: "+ maior);
