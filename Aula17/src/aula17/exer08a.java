@@ -37,6 +37,8 @@ public class exer08a {
                 }
             }
         }
+        System.out.println();
+        System.out.println("Maior valor é: " + maior);
         
         //buscar o menor valor
         int menor = 50;
@@ -47,22 +49,22 @@ public class exer08a {
                 }
             }
         }
+        System.out.println();
+        System.out.println("Menor valor é: " + menor);
         
         //buscar o maior valor da linha 5
         int maiorL5 = 0;
         for (int i=0; i<matrizM.length; ){
-            for (int j=0; j<matrizM[4].length;j++){
-                if(matrizM[4][j]> maior){
+            for (int j=0; j<matrizM[i].length;j++){
+                if(matrizM[4][j]> maiorL5){
                     maiorL5 = matrizM[i][j];
                 }
             }
         }
-        
-        
-        System.out.println("Maior valor é: "+ maior);
-        System.out.println("Menor valor é: "+ menor);
+        System.out.println();
         System.out.println("Maior valor da Linha 5 é: "+ maiorL5);
-        //System.out.println("Coluna: "+ coluna);
         
+        
+
     }
 }
